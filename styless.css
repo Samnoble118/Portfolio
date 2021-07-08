@@ -30,14 +30,23 @@ body{
 
 .projects{
     background-color: rgba(128, 128, 128, 0.527);
-    margin: 0 20px;
+    margin: 20px;
 }
 .projects p{
     font-family: 'Akaya Kanadaka', cursive;
     font-style: italic;
+    margin: 20px;
+}
+.projects h3{
+    font-family: 'Akaya Kanadaka', cursive;
+    margin: 20px;
 }
 
-.pokedexWebsite{
-    width: 80vh;
-    margin: 0;
+.screenshots{
+    width: 80%;
+    margin: 0 20px;
+}
+
+.icon{
+    width: 50px;
 }
