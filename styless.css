@@ -1,0 +1,25 @@
+*{
+    box-shadow: none;
+    align-items: center;
+    text-align: center;
+    font-family: 'Akaya Kanadaka', cursive;
+    color: azure;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+body{
+    background-image: linear-gradient(to bottom right, blue, black);
+    background-repeat: no-repeat;
+}
+.intro h1{
+    font-weight: bolder;
+    font-size: 50px;
+}
+#aboutMe{
+    background-color: rgba(128, 128, 128, 0.527);
+    margin: 0 20px;
+}
+#aboutMe img{
+    height: 200px;
+    margin: 20px;
+}
