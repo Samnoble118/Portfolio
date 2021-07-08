@@ -23,7 +23,7 @@ body{
     height: 200px;
     margin: 20px;
 }
-#aboutMe{
+#aboutMe p{
     font-style: italic;
     font-family: 'Akaya Kanadaka', cursive;
 }
