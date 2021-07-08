@@ -2,10 +2,9 @@
     box-shadow: none;
     align-items: center;
     text-align: center;
-    font-family: 'Akaya Kanadaka', cursive;
     color: azure;
     overflow-x: hidden;
-    margin: 0;
+    
 }
 body{
     background-image: linear-gradient(to bottom right, blue, black);
@@ -14,6 +13,7 @@ body{
 .intro h1{
     font-weight: bolder;
     font-size: 50px;
+    font-family: 'Akaya Kanadaka', cursive;
 }
 #aboutMe{
     background-color: rgba(128, 128, 128, 0.527);
@@ -23,9 +23,18 @@ body{
     height: 200px;
     margin: 20px;
 }
+#aboutMe{
+    font-style: italic;
+    font-family: 'Akaya Kanadaka', cursive;
+}
 
 .projects{
-    margin: 0;
+    background-color: rgba(128, 128, 128, 0.527);
+    margin: 0 20px;
+}
+.projects p{
+    font-family: 'Akaya Kanadaka', cursive;
+    font-style: italic;
 }
 
 .pokedexWebsite{
