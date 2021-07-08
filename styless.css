@@ -4,8 +4,8 @@
     text-align: center;
     font-family: 'Akaya Kanadaka', cursive;
     color: azure;
-    overflow-y: hidden;
     overflow-x: hidden;
+    margin: 0;
 }
 body{
     background-image: linear-gradient(to bottom right, blue, black);
@@ -22,4 +22,13 @@ body{
 #aboutMe img{
     height: 200px;
     margin: 20px;
+}
+
+.projects{
+    margin: 0;
+}
+
+.pokedexWebsite{
+    width: 80vh;
+    margin: 0;
 }
