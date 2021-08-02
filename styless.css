@@ -4,33 +4,99 @@
     text-align: center;
     color: azure;
     overflow-x: hidden;
-    
+    margin: 0;
+    padding: 0;
 }
 body{
-    background-image: linear-gradient(to bottom right, blue, black);
+    background-image: linear-gradient(to bottom right, rgb(82, 82, 82), black);
     background-repeat: no-repeat;
+}
+.intro{
+    margin: 40px;
 }
 .intro h1{
     font-weight: bolder;
     font-size: 50px;
-    font-family: 'Akaya Kanadaka', cursive;
+    font-family: 'Permanent Marker', cursive;
+    overflow: hidden; 
+    margin: 20 auto;
+    white-space: nowrap; 
+    letter-spacing: .15em; 
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
 #aboutMe{
     background-color: rgba(128, 128, 128, 0.527);
-    margin: 0 20px;
+    margin: 20px;
+}
+#aboutMe{
+    font-family: 'Permanent Marker', cursive;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center; 
+}
+#aboutMe::before{
+    content: "";
+    background-image: url(ipiccy_image22.jpg);
+    opacity: 0.5;
+    background-size: 100vh;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    
+}
+#aboutMe h1{
+    overflow: hidden; 
+    margin: 20 auto;
+    white-space: nowrap; 
+    letter-spacing: .15em; 
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    position: relative;
+    
+}
+.samPic{
+    margin: 20px;
+    color: red;
 }
 #aboutMe img{
     height: 200px;
     margin: 20px;
+    position: relative;
 }
 #aboutMe p{
     font-style: italic;
     font-family: 'Akaya Kanadaka', cursive;
+    position: relative;
 }
+.collagePic{
+    height: 100px;
+}
+
 
 .projects{
     background-color: rgba(128, 128, 128, 0.527);
     margin: 20px;
+}
+.projects h1{
+    font-family: 'Permanent Marker', cursive;
+    overflow: hidden; 
+    margin: 20 auto;
+    white-space: nowrap; 
+    letter-spacing: .15em; 
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 .projects p{
     font-family: 'Akaya Kanadaka', cursive;
@@ -49,4 +115,14 @@ body{
 
 .icon{
     width: 50px;
+}
+.contact h1{
+    font-family: 'Permanent Marker', cursive;
+    overflow: hidden; 
+    margin: 20 auto;
+    white-space: nowrap; 
+    letter-spacing: .15em; 
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
