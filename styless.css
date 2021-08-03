@@ -8,15 +8,90 @@
     padding: 0;
 }
 body{
-    background-image: linear-gradient(to bottom right, rgb(82, 82, 82), black);
+    background-image: linear-gradient(to bottom right, rgba(16,16,126,255), rgba(123,30,61,255));
     background-repeat: no-repeat;
 }
+
+main{
+    font-family: 'Permanent Marker', cursive;
+}
+
+.landing{
+    min-height: 100vh;
+    background: url(Space.jpeg);
+    background-size: cover;
+    padding: 0rem 5rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+.nav-links li{
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+#logo{
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+.big-text{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 5rem;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.into{
+    background-image: url(stars.jpeg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.slider{
+    background-image: url(stars.jpeg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    transform: translateY(100%);
+}
+
+.into-text{
+    color: blue;
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: 2rem;
+}
+
+.hide{
+    background: black;
+    overflow: hidden;
+}
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}
+
 .intro{
     margin: 40px;
 }
 .intro h1{
     font-weight: bolder;
-    font-size: 50px;
+    font-size: 6vh;
     font-family: 'Permanent Marker', cursive;
     overflow: hidden; 
     margin: 20 auto;
@@ -37,23 +112,10 @@ body{
 #aboutMe{
     font-family: 'Permanent Marker', cursive;
     position: relative;
-    height: 100vh;
-    width: 100%;
     align-items: center;
     justify-content: center; 
 }
-#aboutMe::before{
-    content: "";
-    background-image: url(ipiccy_image22.jpg);
-    opacity: 0.5;
-    background-size: 100vh;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
-    
-}
+
 #aboutMe h1{
     overflow: hidden; 
     margin: 20 auto;
@@ -78,6 +140,8 @@ body{
     font-style: italic;
     font-family: 'Akaya Kanadaka', cursive;
     position: relative;
+    width: auto;
+    margin: 20px;
 }
 .collagePic{
     height: 100px;
@@ -109,6 +173,30 @@ body{
 }
 
 .screenshots{
+    width: 80%;
+    margin: 0 20px;
+}
+
+.intrests{
+    background-color: rgba(128, 128, 128, 0.527);
+    margin: 20px;
+}
+.intrests h1{
+    font-family: 'Permanent Marker', cursive;
+    overflow: hidden; 
+    margin: 20 auto;
+    white-space: nowrap; 
+    letter-spacing: .15em; 
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+.intrests p{
+    font-family: 'Akaya Kanadaka', cursive;
+    font-style: italic;
+    margin: 20px;
+}
+.intrests img{
     width: 80%;
     margin: 0 20px;
 }
