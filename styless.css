@@ -3,7 +3,7 @@
     align-items: center;
     text-align: center;
     color: azure;
-    overflow-x: hidden;
+    
     margin: 0;
     padding: 0;
 }
@@ -36,7 +36,59 @@ nav {
 .nav-links li{
     padding-left: 1rem;
     font-size: 1.2rem;
+    display: inline;
 }
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:768px){
+   main{
+    overflow-x: hidden;
+    position: relative;
+   }
+
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgba(0, 0, 0, 0.527);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 30%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+   
+    
+   
+}
+.nav-active{
+    transform: translateX(0%);
+}
+
+.toogle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toogle .line2{
+    opacity: 0;
+}
+.toogle .line3{
+    transform: rotate(-45deg) translate(-5px,-6px);
+}
+
 #logo{
     font-family: 'Permanent Marker', cursive;
     font-weight: lighter;
@@ -52,7 +104,7 @@ nav {
 }
 
 .into{
-    background-image: url(stars.jpeg);
+    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -62,7 +114,7 @@ nav {
 }
 
 .slider{
-    background-image: url(stars.jpeg);
+    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -148,11 +200,11 @@ nav {
 }
 
 
-.projects{
+#projects{
     background-color: rgba(128, 128, 128, 0.527);
     margin: 20px;
 }
-.projects h1{
+#projects h1{
     font-family: 'Permanent Marker', cursive;
     overflow: hidden; 
     margin: 20 auto;
@@ -162,12 +214,12 @@ nav {
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
-.projects p{
+#projects p{
     font-family: 'Akaya Kanadaka', cursive;
     font-style: italic;
     margin: 20px;
 }
-.projects h3{
+#projects h3{
     font-family: 'Akaya Kanadaka', cursive;
     margin: 20px;
 }
@@ -177,11 +229,11 @@ nav {
     margin: 0 20px;
 }
 
-.intrests{
+#intrests{
     background-color: rgba(128, 128, 128, 0.527);
     margin: 20px;
 }
-.intrests h1{
+#intrests h1{
     font-family: 'Permanent Marker', cursive;
     overflow: hidden; 
     margin: 20 auto;
@@ -191,12 +243,12 @@ nav {
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
-.intrests p{
+#intrests p{
     font-family: 'Akaya Kanadaka', cursive;
     font-style: italic;
     margin: 20px;
 }
-.intrests img{
+#intrests img{
     width: 80%;
     margin: 0 20px;
 }
@@ -204,7 +256,7 @@ nav {
 .icon{
     width: 50px;
 }
-.contact h1{
+#contact h1{
     font-family: 'Permanent Marker', cursive;
     overflow: hidden; 
     margin: 20 auto;
