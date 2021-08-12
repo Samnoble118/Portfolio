@@ -11,6 +11,9 @@ const navSlide = () => {
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
         
+
+const faders = document.querySelectorAll('.fade-in');
+
     burger.addEventListener('click', () =>{
             //Toggle Nav
         nav.classList.toggle('nav-active');
@@ -30,3 +33,5 @@ const navSlide = () => {
 }
 
 navSlide();
+
+

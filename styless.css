@@ -3,9 +3,10 @@
     align-items: center;
     text-align: center;
     color: azure;
-    
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 body{
     background-image: linear-gradient(to bottom right, rgba(16,16,126,255), rgba(123,30,61,255));
@@ -296,3 +297,12 @@ nav {
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+}
+.fade-in.appear{
+    opacity: 1;
+}
+
