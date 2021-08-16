@@ -34,4 +34,17 @@ const faders = document.querySelectorAll('.fade-in');
 
 navSlide();
 
+var options = {
+    animateClass: 'animated',
+    animateThreshold: 100,
+    scrollPollInterval: 50
+}
+$(document).ready(function(){
+    $('.aniview-v4').AniView({
+        animateClass: 'animate__animated'
+    });
+});
+
+$('.aniview').AniView(options);
+
 
